@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <title>Dok Alalai</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-icons.css">
+</head>
+<body class="">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" data-bs-toggle="offcanvas" href="#main-menu"><i class="bi bi-list"></i> Menu</a>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+    {% include "components/footer.html" %}
+    {% include "components/menu.html" %}
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/axios.min.js"></script>
+    <script src="/static/js/core.js"></script>
+    {% block custom_js %}{% endblock %}
+</body>
+</html>

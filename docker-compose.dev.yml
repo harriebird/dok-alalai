@@ -1,0 +1,31 @@
+services:
+  webapp:
+    build:
+      context: ./services/webapp
+      dockerfile: dev.Dockerfile
+    container_name: alalai-dev-webapp
+    env_file:
+      - config.env
+    restart: unless-stopped
+    volumes:
+      - ./services/webapp:/code
+    ports:
+      - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:18
+    container_name: alalai-dev-db
+    env_file:
+      - config.env
+    restart: unless-stopped
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:

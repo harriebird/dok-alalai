@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Assessment Feedback</h1>
+    {% include "components/client-quick-info-form.html" %}
+    <div class="container mt-4 p-4 border rounded shadow-sm">
+        <h2 class="mb-4">Assessment Feedback</h2>
+        <div id="ai-feedback"></div>
+    </div>
+    <div class="container mt-4 p-4 border rounded shadow-sm">
+        <h2 class="mb-4">Comment</h2>
+        <div class="mb-4">
+            <label class="form-label" for="feedback_comment">AI Feedback Comment</label>
+            <textarea class="form-control" name="feedback_comment" id="feedback_comment" rows="5" placeholder="Put your comment here regarding the AI feedback."></textarea>
+        </div>
+        <div class="mb-4 row">
+            <div class="col-md-6">
+                <label for="feedback_rating" class="form-label">AI Feedback Rating</label>
+                <select class="form-select" id="feedback_rating" name="feedback_rating">
+                    <option value="" selected disabled>Choose...</option>
+                    <option value="Strongly Disagree">Strongly Disagree</option>
+                    <option value="Disagree">Disagree</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Agree">Agree</option>
+                    <option value="Strongly Agree">Strongly Agree</option>
+                </select>
+            </div>
+            <div class="col-md-6 d-flex align-items-center pt-4">
+                <button class="btn btn-primary btn-lg w-100" id="form-submit-btn">Submit the comment</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block custom_js %}
+    <script>
+        const feedback_uuid = "{{ feedback_uuid }}"
+    </script>
+    <script src="/static/js/markdown-it.min.js"></script>
+    <script src="/static/js/pages/feedbackinfo.js"></script>
+{% endblock %}

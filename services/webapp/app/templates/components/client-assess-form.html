@@ -1,0 +1,284 @@
+<form class="container mt-4 p-4 border rounded shadow-sm" id="systems-review-frm">
+    <h2 class="mb-4">Review of Systems</h2>
+    <fieldset id="systems-review-fs">
+        <div class="mb-4">
+            <label class="form-label" for="question1">Chief complaint (please describe)</label>
+            <textarea class="form-control" name="question1" id="question1" rows="2"></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="form-label" for="question2">Do you experience any of the following: loss of appetite,
+                lack of sleep, unexplained weight loss, feeling down/depressed, fever, headache,
+                memory loss, blurring of vision, or hearing loss?</label>
+            <div class="mb-2">
+                <input type="radio" class="btn-check" name="q2-ans" id="q2-yes" value="yes" required>
+                <label class="btn btn-outline-warning px-4" for="q2-yes">Yes</label>
+                <input type="radio" class="btn-check" name="q2-ans" id="q2-no" value="no" required>
+                <label class="btn btn-outline-success px-4" for="q2-no">No</label>
+            </div>
+            <textarea class="form-control d-none" name="question2" id="question2" rows="2" placeholder="If yes, please explain..."></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="form-label" for="question3">Do you experience any of the following: cough/colds,
+                chest pain, palpitations, or difficulty in breathing?</label>
+            <div class="mb-2">
+                <input type="radio" class="btn-check" name="q3-ans" id="q3-yes" value="yes" required>
+                <label class="btn btn-outline-warning px-4" for="q3-yes">Yes</label>
+                <input type="radio" class="btn-check" name="q3-ans" id="q3-no" value="no" required>
+                <label class="btn btn-outline-success px-4" for="q3-no">No</label>
+            </div>
+            <textarea class="form-control d-none" name="question3" id="question3" rows="2" placeholder="If yes, please explain..."></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="form-label" for="question4">Do you experience any of the following: abdominal pain,
+                vomiting, change in bowel movement, rectal bleeding, or bloody/tarry stools?</label>
+            <div class="mb-2">
+                <input type="radio" class="btn-check" name="q4-ans" id="q4-yes" value="yes" required>
+                <label class="btn btn-outline-warning px-4" for="q4-yes">Yes</label>
+                <input type="radio" class="btn-check" name="q4-ans" id="q4-no" value="no" required>
+                <label class="btn btn-outline-success px-4" for="q4-no">No</label>
+            </div>
+            <textarea class="form-control d-none" name="question4" id="question4" rows="2" placeholder="If yes, please explain..."></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="form-label" for="question5">Do you experience any of the following: frequent urination,
+                frequent eating, frequent intake of fluids?</label>
+            <div class="mb-2">
+                <input type="radio" class="btn-check" name="q5-ans" id="q5-yes" value="yes" required>
+                <label class="btn btn-outline-warning px-4" for="q5-yes">Yes</label>
+                <input type="radio" class="btn-check" name="q5-ans" id="q5-no" value="no" required>
+                <label class="btn btn-outline-success px-4" for="q5-no">No</label>
+            </div>
+            <textarea class="form-control d-none" name="question5" id="question5" rows="2" placeholder="If yes, please explain..."></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="form-label" for="question6">For male and female, do you experience ay of the following:
+                pain or discomfort on urination, frequency of urination, dribbling of urine,
+                pain during/after sex, blood in the urine, or foul-smelling genital discharge?</label>
+            <div class="mb-2">
+                <input type="radio" class="btn-check" name="q6-ans" id="q6-yes" value="yes" required>
+                <label class="btn btn-outline-warning px-4" for="q6-yes">Yes</label>
+                <input type="radio" class="btn-check" name="q6-ans" id="q6-no" value="no" required>
+                <label class="btn btn-outline-success px-4" for="q6-no">No</label>
+            </div>
+            <textarea class="form-control d-none" name="question6" id="question6" rows="2" placeholder="If yes, please explain..."></textarea>
+        </div>
+        <div class="row g-3 mb-4" id="female-only">
+            <div class="col-md-4">
+                <label class="form-label" for="question7a">Last menstrual period</label>
+                <input type="date" class="form-control" name="question7a" id="question7a">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label" for="question7b">First menstrual period</label>
+                <input type="date" class="form-control" name="question7b" id="question7b">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label" for="question7c">Number of pregnancy</label>
+                <input type="number" class="form-control" name="question7c" id="question7c">
+            </div>
+        </div>
+        <div class="mb-4">
+            <label class="form-label" for="question8">Do you experience any of the following; muscle spasm,
+                tremors, weakness; muscle/joint pain, stiffness, limitation of movement?</label>
+            <div class="mb-2">
+                <input type="radio" class="btn-check" name="q8-ans" id="q8-yes" value="yes" required>
+                <label class="btn btn-outline-warning px-4" for="q8-yes">Yes</label>
+                <input type="radio" class="btn-check" name="q8-ans" id="q8-no" value="no" required>
+                <label class="btn btn-outline-success px-4" for="q8-no">No</label>
+            </div>
+            <textarea class="form-control d-none" name="question8" id="question8" rows="2" placeholder="If yes, please explain..."></textarea>
+        </div>
+    </fieldset>
+</form>
+
+<form class="container mt-4 p-4 border rounded shadow-sm" id="social-history-frm">
+    <h2 class="mb-4">Personal/Social History</h2>
+    <fieldset id="social-history-fs">
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <label class="form-label" for="question9">Do you smoke cigar, cigarette, e-cigarette, vape, or other similar products?</label>
+                <div class="mb-2">
+                    <input type="radio" class="btn-check" name="q9-ans" id="q9-yes" value="yes" required>
+                    <label class="btn btn-outline-warning px-4" for="q9-yes">Yes</label>
+                    <input type="radio" class="btn-check" name="q9-ans" id="q9-no" value="no" required>
+                    <label class="btn btn-outline-success px-4" for="q9-no">No</label>
+                </div>
+                <div class="row">
+                    <input type="number" class="form-control d-none" name="smoke_years" id="question9" placeholder="Years">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label" for="question10">Do you drink alcohol or alcohol-containing beverages?</label>
+                <div class="mb-2">
+                    <input type="radio" class="btn-check" name="q10-ans" id="q10-yes" value="yes" required>
+                    <label class="btn btn-outline-warning px-4" for="q10-yes">Yes</label>
+                    <input type="radio" class="btn-check" name="q10-ans" id="q10-no" value="no" required>
+                    <label class="btn btn-outline-success px-4" for="q10-no">No</label>
+                </div>
+                <input type="number" class="form-control d-none" name="alcohol_years" id="question10">
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<form class="container mt-4 p-4 border rounded shadow-sm" id="medical-history-frm">
+    <h2 class="mb-4">Medical History</h2>
+    <fieldset id="medical-history-fs">
+        <div class="mb-3">
+            <label for="med-hist-input" class="form-label">Enter Medical Conditions</label>
+            <div class="form-control d-flex flex-wrap align-items-center" id="med-hist-container" style="gap: 5px; cursor: text;">
+                <input type="text" id="med-hist-input" class="form-control border-0 flex-grow-1" placeholder="Type and press Enter" style="outline: none;">
+            </div>
+            <div class="form-text">Press Enter or comma to add a keyword.</div>
+        </div>
+    </fieldset>
+</form>
+
+<form class="container mt-4 p-4 border rounded shadow-sm" id="physical-exam-frm">
+    <h2 class="mb-4">Pertinent Physical Examination Findings</h2>
+    <fieldset id="physical-exam-fs">
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label for="bp_systolic" class="form-label">Blood Pressure</label>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="bp_systolic" name="bp_systolic">
+                    <span class="input-group-text">/</span>
+                    <input type="number" class="form-control" id="bp_diastolic" name="bp_diastolic">
+                    <span class="input-group-text">mmHg</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="blood_type" class="form-label">Blood Type</label>
+                <select class="form-select" id="blood_type" name="blood_type">
+                    <option value="" selected disabled>Choose...</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="heart_rate" class="form-label">Heart Rate</label>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="heart_rate" name="heart_rate">
+                    <span class="input-group-text">bpm</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="respiration_rate" class="form-label">Respiration Rate</label>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="respiration_rate" name="respiration_rate">
+                    <span class="input-group-text">breaths/min</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="temperature" class="form-label">Temperature</label>
+                <div class="input-group mb-3">
+                    <input type="number" step="0.1" class="form-control" id="temperature" name="temperature">
+                    <span class="input-group-text">°C</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="va_top" class="form-label">Visual Acuity</label>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="va_top" name="va_top">
+                    <span class="input-group-text">/</span>
+                    <input type="number" class="form-control" id="va_bottom" name="va_bottom">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="height" class="form-label">Height</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="height" name="height">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="weight" class="form-label">Weight</label>
+                <div class="input-group">
+                    <input type="number" step="0.1" class="form-control" id="weight" name="weight">
+                    <span class="input-group-text">kg</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="bmi" class="form-label">Body Mass Index</label>
+                <div class="input-group">
+                    <input type="number" step="0.1" class="form-control" id="bmi" name="bmi">
+                    <span class="input-group-text">kg/m2</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="gen_survey" class="form-label">General Survey</label>
+                <select class="form-select" id="gen_survey" name="gen_survey">
+                    <option value="" selected disabled>Choose...</option>
+                    <option value="Awake and alert">Awake and alert</option>
+                    <option value="Altered sensorium">Altered sensorium</option>
+                </select>
+            </div>
+            <div class="col-md-9">
+                <label class="form-label" for="additional_notes">Remarks</label>
+                <textarea class="form-control" name="additional_notes" id="additional_notes" rows="2"></textarea>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+<form class="container mt-4 p-4 border rounded shadow-sm d-none" id="for-toddler-frm">
+    <h2 class="mb-4">For Toddler</h2>
+    <fieldset id="for-toddler-fs">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label for="length" class="form-label">Length</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="length" name="length">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="hip" class="form-label">Hip</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="hip" name="hip">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="skinfold_thick" class="form-label">Skinfold Thickness</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="skinfold_thick" name="skinfold_thick">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="limbs" class="form-label">Limbs</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="limbs" name="limbs">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="body_waist_circ" class="form-label">Body Waist Circumference</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="body_waist_circ" name="body_waist_circ">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="mid_upper_arm_circ" class="form-label">Middle Upper Arm Circumference (MUAC)</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="mid_upper_arm_circ" name="mid_upper_arm_circ">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="head_circ" class="form-label">Head Circumference</label>
+                <div class="input-group">
+                    <input type="number" step="0.01" class="form-control" id="head_circ" name="head_circ">
+                    <span class="input-group-text">cm</span>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>

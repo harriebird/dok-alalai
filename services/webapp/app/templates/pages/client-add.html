@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Add New Client</h1>
+    {% include "components/client-form.html" %}
+    <div class="container mt-4 p-4 border rounded shadow-sm">
+        <button class="btn btn-primary btn-lg" id="form-submit-btn">Add new client</button>
+    </div>
+{% endblock %}
+{% block custom_js %}
+    <script src="/static/js/pages/clientadd.js"></script>
+{% endblock %}

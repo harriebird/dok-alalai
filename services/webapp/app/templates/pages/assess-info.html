@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Assessment Information</h1>
+    {% include "components/client-form.html" %}
+    {% include "components/client-assess-form.html" %}
+    {% include "components/assess-feedback-list.html" %}
+{% endblock %}
+{% block custom_js %}
+    <script>
+        const assessment_uuid = "{{ assessment_uuid }}"
+    </script>
+    <script src="/static/js/pages/assessinfo.js"></script>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Client Assessment</h1>
+    {% include "components/client-form.html" %}
+    {% include "components/client-assess-form.html" %}
+    <div class="container mt-4 p-4 border rounded shadow-sm">
+        <button class="btn btn-primary btn-lg" id="form-submit-btn">Submit this form</button>
+    </div>
+{% endblock %}
+{% block custom_js %}
+    <script>
+        const client_uuid = "{{ client_uuid }}"
+    </script>
+    <script src="/static/js/pages/clientassess.js"></script>
+{% endblock %}

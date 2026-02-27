@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,vuejs,pycharm+all,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,vuejs,pycharm+all,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/python,pycharm+all,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,pycharm+all,visualstudiocode
 
 ### PyCharm+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -280,11 +280,8 @@ pyrightconfig.json
 .history
 .ionide
 
-### Vuejs ###
-# Recommended template: Node.gitignore
+# End of https://www.toptal.com/developers/gitignore/api/python,pycharm+all,visualstudiocode
 
-node_modules/
-npm-debug.log
-yarn-error.log
+# Custom ignores
 
-# End of https://www.toptal.com/developers/gitignore/api/python,vuejs,pycharm+all,visualstudiocode
+config.env

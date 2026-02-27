@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="d-flex w-100 align-items-center justify-content-between mb-4">
+        <h1>Client Information</h1>
+    </div>
+    {% include "components/client-form.html" %}
+    {% include "components/client-assess-list.html" %}
+{% endblock %}
+{% block custom_js %}
+    <script>
+        const client_uuid = "{{ client_uuid }}"
+    </script>
+    <script src="/static/js/pages/clientinfo.js"></script>
+{% endblock %}
