@@ -8,6 +8,8 @@ WORKDIR /code
 
 RUN mkdir -p /etc/sudoers.d/
 
+RUN apt update && apt install postgresql-client -y
+
 RUN groupadd --gid 1000 devuser \
     && useradd --uid 1000 --gid devuser --shell /bin/bash --create-home devuser \
     && echo devuser ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/devuser \
@@ -17,10 +19,10 @@ COPY . .
 
 RUN uv pip install -r pyproject.toml --system
 
-RUN chmod +x entrypoint.sh
+COPY start-dev.sh /start-dev.sh
+
+RUN chmod +x /start-dev.sh
 
 USER devuser
 
-ENTRYPOINT ["./entrypoint.sh"]
-
-ENTRYPOINT ["fastapi", "dev", "app/main.py", "--host", "0.0.0.0"]
+CMD ["/start-dev.sh"]
