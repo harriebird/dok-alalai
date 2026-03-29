@@ -8,7 +8,7 @@ WORKDIR /code
 
 RUN mkdir -p /etc/sudoers.d/
 
-RUN apt update && apt install postgresql-client -y
+RUN apt update && apt install postgresql-client sudo -y
 
 RUN groupadd --gid 1000 devuser \
     && useradd --uid 1000 --gid devuser --shell /bin/bash --create-home devuser \
