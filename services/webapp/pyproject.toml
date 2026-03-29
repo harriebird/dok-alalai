@@ -1,12 +1,12 @@
 [project]
 name = "backend"
-version = "0.1.0"
+version = "0.1.1"
 description = "Backend for dok-alalai."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "alembic>=1.18.4",
-    "fastapi[standard]>=0.131.1",
+    "fastapi[standard]>=0.135.2",
     "ollama>=0.6.1",
     "pillow>=12.1.1",
     "psycopg[binary]>=3.3.3",
