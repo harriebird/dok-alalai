@@ -1,7 +1,7 @@
 [project]
-name = "backend"
+name = "dok-alalai"
 version = "0.1.1"
-description = "Backend for dok-alalai."
+description = "Web Application for Dok Alalai."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
