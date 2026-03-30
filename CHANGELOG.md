@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased - YYYY-MM-DD
+- Fixed the TemplateResponse implementation issue
 - Added sudo package installation in the dev.Dockerfile
 - Updated FastAPI to v0.135.2
 
