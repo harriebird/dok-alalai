@@ -1,12 +1,12 @@
 # dok-alalai
 
-An AI assistant for medical professionals.
+Dok Alalai assists in interpreting assessment records. This helps especially when dealing with hundreds of patients in a day.
 
 ## Requirements
 - [Docker](https://www.docker.com/)
 - [Ollama](https://ollama.com/)
 - [Python](https://www.python.org/)
-- [uv](https://docs.astral.sh/uv/)
+  - [uv](https://docs.astral.sh/uv/)
 
 ## Setup
 
