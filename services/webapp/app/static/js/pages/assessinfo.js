@@ -88,6 +88,11 @@
             document.querySelector("#gen_survey").value = assessInfo.physical_exam.gen_survey
             document.querySelector("#additional_notes").value = assessInfo.physical_exam.additional_notes
 
+            document.querySelector("#bmi").value = computeBMI(
+                assessInfo.physical_exam.weight,
+                assessInfo.physical_exam.height
+            )
+
             if(toddler) {
                 document.querySelector("#length").value = assessInfo.toddler_exam.length
                 document.querySelector("#body_waist_circ").value = assessInfo.toddler_exam.body_waist_circ
