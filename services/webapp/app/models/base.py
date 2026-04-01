@@ -102,6 +102,7 @@ class ToddlerExamBase(SQLModel):
 class AssessmentFeedbackBase(SQLModel):
     assessment_id: int | None = Field(default=None, foreign_key="assessment.id")
     ai_feedback: str | None = Field(default=None)
+    generate_duration: float | None = Field(default=None)
     feedback_rating: RatingEnum | None = Field()
     feedback_comment: str | None = Field(default=None)
 

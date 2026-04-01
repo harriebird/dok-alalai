@@ -1,7 +1,8 @@
 # Changelog
 
 ## Unreleased - YYYY-MM-DD
-- Automatically compute BMI
+- Added generate_duration field in the AssessmentFeedback field
+- Added automatic BMI compute
 - Fixed the medical conditions list display implementation
 - Fixed the TemplateResponse implementation issue
 - Added sudo package installation in the dev.Dockerfile

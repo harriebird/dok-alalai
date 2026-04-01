@@ -35,7 +35,7 @@ class AssessmentFeedbackQuickInfo(SQLModel):
     id : int
     uuid: uuid.UUID
     created_at: datetime
-    updated_at: datetime | None = None
+    generate_duration: float | None = None
     feedback_rating: RatingEnum | None = None
 
 class AssessmentListInfo(SQLModel):
@@ -59,7 +59,7 @@ class AssessmentFeedbackListInfo(SQLModel):
     assessment: AssessmentQuickInfo
     feedback_rating: RatingEnum | None = None
     created_at: datetime
-    updated_at: datetime | None
+    generate_duration: float | None = None
     commented : bool
 
 class AssessmentFeedbackFullInfo(SQLModel):
