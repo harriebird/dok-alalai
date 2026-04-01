@@ -59,6 +59,16 @@
 
     container.addEventListener("click", () => input.focus())
 
+    let handleBMI = function () {
+        document.querySelector("#bmi").value = computeBMI(
+            document.querySelector("#weight").value,
+            document.querySelector("#height").value
+        )
+    }
+
+    document.querySelector("#weight").onchange = handleBMI
+    document.querySelector("#height").onchange = handleBMI
+
     document.querySelector("#form-submit-btn").onclick = () => {
         let assessData = {}
         let forms = []
