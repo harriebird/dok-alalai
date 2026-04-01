@@ -51,20 +51,8 @@
             const value = input.value.trim().replace(",", "")
 
             if (value && medicalHistory.indexOf(value) < 0) {
-                const badge = document.createElement("span")
-                badge.className = "badge bg-primary d-flex align-items-center p-2"
-                badge.innerHTML = `${value} <button type="button" class="btn-close btn-close-white ms-2" style="font-size: 0.5rem;" aria-label="Close"></button>`
-
-                badge.querySelector(".btn-close").addEventListener("click", () => {
-                    badge.remove()
-                    medicalHistory.splice(medicalHistory.indexOf(badge.innerText.trim()), 1)
-                })
-
-                container.insertBefore(badge, input)
-
+                addConditionBadge(value, container, input)
                 medicalHistory.push(value)
-
-                input.value = ""
             }
         }
     })
