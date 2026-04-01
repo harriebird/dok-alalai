@@ -33,7 +33,6 @@ async def clients_page(request: Request):
 async def clients_page(feedback_uuid: uuid.UUID, request: Request):
     return templates.TemplateResponse(request, "pages/feedback-info.html", {"feedback_uuid": feedback_uuid})
 
-
 @frontend_router.get("/assessments", name="assess-list")
 async def clients_page(request: Request):
     return templates.TemplateResponse(request, "pages/assess-list.html")

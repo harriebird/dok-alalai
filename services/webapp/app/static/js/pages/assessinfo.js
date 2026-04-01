@@ -66,6 +66,15 @@
                 document.querySelector(`#q10-no`).checked = true
             }
 
+            if(assessInfo.medical_history) {
+                const input = document.querySelector("#med-hist-input");
+                const container = document.querySelector("#med-hist-container");
+
+                assessInfo.medical_history.forEach((condition) => {
+                    addConditionBadge(condition.name, container, input)
+                })
+            }
+
             document.querySelector("#bp_systolic").value = assessInfo.physical_exam.bp_systolic
             document.querySelector("#bp_diastolic").value = assessInfo.physical_exam.bp_diastolic
             document.querySelector("#blood_type").value = assessInfo.physical_exam.blood_type
