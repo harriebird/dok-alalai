@@ -24,7 +24,9 @@
             comment["feedback_rating"] = document.querySelector("#feedback_rating").value
             axios.patch(`/api/ai-feedback/${feedback_uuid}/comment`,
                 comment
-            )
+            ).then(()=> {
+                alert("Comment was successfully submitted!")
+            })
         }
 
 })();
