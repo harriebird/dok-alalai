@@ -6,7 +6,7 @@ Dok Alalai assists in interpreting assessment records. This helps especially whe
 - [Docker](https://www.docker.com/)
 - [Ollama](https://ollama.com/)
 - [Python](https://www.python.org/)
-  - [uv](https://docs.astral.sh/uv/)
+- [uv](https://docs.astral.sh/uv/)
 
 ## Setup
 
