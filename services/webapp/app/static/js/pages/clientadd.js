@@ -20,7 +20,7 @@
                 personalInfo
             ).then(() => {
                 alert("Client successfully added!")
-                clientForm.reset()
+                window.location.href = "/clients"
             })
         }
     }
