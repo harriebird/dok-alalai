@@ -22,8 +22,6 @@ def analyze_assessment(assessment_uuid):
             system="You're an expert doctor. You are good at analyzing assessment forms. Give direct response instead making it conversational."
         )
 
-        print(f"[DEBUG] response: {response}")
-
         clean_response = response.response.split("<unused95>")[1] if "<unused95>" in response.response else response.response
 
         duration_seconds = round((response.total_duration / 1e9), 4)

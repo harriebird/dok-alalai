@@ -73,7 +73,7 @@
             </div>
             <div class="col-md-4">
                 <label class="form-label" for="question7c">Number of pregnancy</label>
-                <input type="number" class="form-control" name="question7c" id="question7c">
+                <input type="number" min="0" class="form-control" name="question7c" id="question7c">
             </div>
         </div>
         <div class="mb-4">
@@ -103,7 +103,7 @@
                     <label class="btn btn-outline-success px-4" for="q9-no">No</label>
                 </div>
                 <div class="row">
-                    <input type="number" class="form-control d-none" name="smoke_years" id="question9" placeholder="Years">
+                    <input type="number" min="0" class="form-control d-none" name="smoke_years" id="question9" placeholder="Years">
                 </div>
             </div>
             <div class="col-md-6">
@@ -114,7 +114,9 @@
                     <input type="radio" class="btn-check" name="q10-ans" id="q10-no" value="no" required>
                     <label class="btn btn-outline-success px-4" for="q10-no">No</label>
                 </div>
-                <input type="number" class="form-control d-none" name="alcohol_years" id="question10">
+                <div class="row">
+                    <input type="number" min="0" class="form-control d-none" name="alcohol_years" id="question10" placeholder="Years">
+                </div>
             </div>
         </div>
     </fieldset>
@@ -140,9 +142,9 @@
             <div class="col-md-4">
                 <label for="bp_systolic" class="form-label">Blood Pressure</label>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" id="bp_systolic" name="bp_systolic">
+                    <input type="number" min="0" class="form-control" id="bp_systolic" name="bp_systolic">
                     <span class="input-group-text">/</span>
-                    <input type="number" class="form-control" id="bp_diastolic" name="bp_diastolic">
+                    <input type="number" min="0" class="form-control" id="bp_diastolic" name="bp_diastolic">
                     <span class="input-group-text">mmHg</span>
                 </div>
             </div>
@@ -163,50 +165,50 @@
             <div class="col-md-4">
                 <label for="heart_rate" class="form-label">Heart Rate</label>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" id="heart_rate" name="heart_rate">
+                    <input type="number" min="0" class="form-control" id="heart_rate" name="heart_rate">
                     <span class="input-group-text">bpm</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="respiration_rate" class="form-label">Respiration Rate</label>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" id="respiration_rate" name="respiration_rate">
+                    <input type="number" min="0" class="form-control" id="respiration_rate" name="respiration_rate">
                     <span class="input-group-text">breaths/min</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="temperature" class="form-label">Temperature</label>
                 <div class="input-group mb-3">
-                    <input type="number" step="0.1" class="form-control" id="temperature" name="temperature">
+                    <input type="number" min="0" step="0.01" class="form-control" id="temperature" name="temperature">
                     <span class="input-group-text">°C</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="va_top" class="form-label">Visual Acuity</label>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" id="va_top" name="va_top">
+                    <input type="number" min="0" class="form-control" id="va_top" name="va_top">
                     <span class="input-group-text">/</span>
-                    <input type="number" class="form-control" id="va_bottom" name="va_bottom">
+                    <input type="number" min="0" class="form-control" id="va_bottom" name="va_bottom">
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="height" class="form-label">Height</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="height" name="height">
+                    <input type="number" min="0" step="0.01" class="form-control" id="height" name="height">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="weight" class="form-label">Weight</label>
                 <div class="input-group">
-                    <input type="number" step="0.1" class="form-control" id="weight" name="weight">
+                    <input type="number" min="0" step="0.1" class="form-control" id="weight" name="weight">
                     <span class="input-group-text">kg</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="bmi" class="form-label">Body Mass Index</label>
                 <div class="input-group">
-                    <input type="number" step="0.1" class="form-control" id="bmi" name="bmi">
+                    <input type="number" step="0.01" disabled class="form-control" id="bmi" name="bmi">
                     <span class="input-group-text">kg/m2</span>
                 </div>
             </div>
@@ -233,49 +235,49 @@
             <div class="col-md-3">
                 <label for="length" class="form-label">Length</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="length" name="length">
+                    <input type="number" min="0" step="0.01" class="form-control" id="length" name="length">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
             <div class="col-md-3">
                 <label for="hip" class="form-label">Hip</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="hip" name="hip">
+                    <input type="number" min="0" step="0.01" class="form-control" id="hip" name="hip">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
             <div class="col-md-3">
                 <label for="skinfold_thick" class="form-label">Skinfold Thickness</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="skinfold_thick" name="skinfold_thick">
+                    <input type="number" min="0" step="0.01" class="form-control" id="skinfold_thick" name="skinfold_thick">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
             <div class="col-md-3">
                 <label for="limbs" class="form-label">Limbs</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="limbs" name="limbs">
+                    <input type="number" min="0" step="0.01" class="form-control" id="limbs" name="limbs">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="body_waist_circ" class="form-label">Body Waist Circumference</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="body_waist_circ" name="body_waist_circ">
+                    <input type="number" min="0" step="0.01" class="form-control" id="body_waist_circ" name="body_waist_circ">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="mid_upper_arm_circ" class="form-label">Middle Upper Arm Circumference (MUAC)</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="mid_upper_arm_circ" name="mid_upper_arm_circ">
+                    <input type="number" min="0" step="0.01" class="form-control" id="mid_upper_arm_circ" name="mid_upper_arm_circ">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <label for="head_circ" class="form-label">Head Circumference</label>
                 <div class="input-group">
-                    <input type="number" step="0.01" class="form-control" id="head_circ" name="head_circ">
+                    <input type="number" min="0" step="0.01" class="form-control" id="head_circ" name="head_circ">
                     <span class="input-group-text">cm</span>
                 </div>
             </div>
