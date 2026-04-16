@@ -6,8 +6,7 @@ def compute_age(birthday):
     return age
 
 def compute_bmi(height, weight):
-    height_meter = height / 100
-    bmi = weight / (height_meter ** 2)
+    bmi = format(weight / ((height / 100) ** 2), "0.2f")
     return bmi
 
 def format_assessment(assessment):

@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased - YYYY-MM-DD
+- Limited the BMI decimal to 2 places
 - Fixed the ENTRYPOINT no such file issue
 - Reimplemented successful form submit flow
 - Fixed validation on numeric fields in the client assessment form
