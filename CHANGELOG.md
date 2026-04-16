@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased - YYYY-MM-DD
+- Fixed the ENTRYPOINT no such file issue
+- Reimplemented successful form submit flow
+- Fixed validation on numeric fields in the client assessment form
 - Added generate_duration field in the AssessmentFeedback field
 - Added automatic BMI compute
 - Fixed the medical conditions list display implementation

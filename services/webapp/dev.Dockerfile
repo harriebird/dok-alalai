@@ -8,7 +8,7 @@ WORKDIR /code
 
 RUN mkdir -p /etc/sudoers.d/
 
-RUN apt update && apt install postgresql-client sudo -y
+RUN apt update && apt install postgresql-client sudo dos2unix -y
 
 RUN groupadd --gid 1000 devuser \
     && useradd --uid 1000 --gid devuser --shell /bin/bash --create-home devuser \
@@ -21,6 +21,7 @@ RUN uv pip install -r pyproject.toml --system
 
 COPY start-dev.sh /start-dev.sh
 
+RUN dos2unix /start-dev.sh
 RUN chmod +x /start-dev.sh
 
 USER devuser
