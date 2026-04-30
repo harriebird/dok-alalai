@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased - YYYY-MM-DD
+- Change the License from MIT to AGPLv3
 - Limited the BMI decimal to 2 places
 - Fixed the ENTRYPOINT no such file issue
 - Reimplemented successful form submit flow

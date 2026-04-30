@@ -22,4 +22,4 @@ Dok Alalai assists in interpreting assessment records. This helps especially whe
 
 ## License
 
-Code released under the [MIT License](LICENSE).
+Code released under the [AGPLv3](LICENSE).
